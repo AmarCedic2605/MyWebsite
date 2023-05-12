@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  #tic-tac-toe-board {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .cell {
+    width: 60px;
+    height: 60px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .cell:before {
+    content: "";
+    font-size: 2em;
+  }
+  
+  #reset-button {
+    margin-top: 20px;
+  }
+  
