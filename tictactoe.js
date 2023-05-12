@@ -12,4 +12,7 @@ document.querySelectorAll('.cell').forEach((cell, i) => {
 });
 
 document.getElementById('reset-button').addEventListener('click', function() {
- 
+  board.fill(null);
+  document.querySelectorAll('.cell').forEach(cell => cell.textContent = '');
+  currentPlayer = 'X';
+});
